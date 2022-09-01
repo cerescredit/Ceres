@@ -77,7 +77,7 @@ export default {
         { desc: "Home", tar: "", link: "", router: "/" },
         { desc: "Oracle", tar: "", link: "", router: "Oracle" },
         { desc: "DID", tar: "", link: "", router: "did" },
-        { desc: "SDK", tar: "", open: "/sdk", router: "" },
+        { desc: "SDK", tar: "", link: "https://github.com/cerescredit/Ceres", router: "" },
         // { desc: "Intro", tar: "", link: "" },
         // { desc: "Q&A", tar: 11, link: "" },
       ],
@@ -357,11 +357,8 @@ export default {
         document.documentElement.scrollTop = 0;
         this.$router.push(item.router);
       }
-      if (item.open) {
-        window.open(window.location.origin + '/#' + item.open);
-      }
       if (item.link) {
-        window.open(window.location.origin + '/#' + item.link);
+        window.open(item.link);
       }
       if (item.tar) {
         if (this.$route.path != "/") {
