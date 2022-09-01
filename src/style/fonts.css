@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Dotted Songti Square';
+    src: url('../fonts/DottedSongtiSquareRegular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Meddon';
+    src: url('../fonts/Meddon.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

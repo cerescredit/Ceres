@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+a,
+img,
+button,
+input,
+textarea,
+div,
+span,
+li {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+a {
+  background: transparent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:active {
+  outline: 0;
+}
+img {
+  border: 0;
+  max-width: 100%;
+  display: block;
+}
+.center {
+  text-align: center;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.auto {
+  margin: 0 auto;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+input:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px  transparent inset !important;
+}
+input {
+  outline-color: invert ;
+  outline-style: none ;
+  outline-width: 0px ;
+  border: none ;
+  border-style: none ;
+  text-shadow: none ;
+  -webkit-appearance: none ;
+  -webkit-user-select: text ;
+  outline-color: transparent ;
+  box-shadow: none;
+}

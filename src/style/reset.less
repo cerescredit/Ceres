@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+.clearfix:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+// 去除点击时出现的默认阴影效果
+a, img, button, input, textarea, div, span, li{
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+a:active { outline: 0; }
+// a:active { color: #fff; }
+img {
+    border: 0;
+    max-width: 100%;
+	display: block;
+}
+.center{ text-align: center;}
+.clearfix:after { content:" "; display:block; height:0; visibility:hidden; clear:both}
+.auto{ margin: 0 auto }
+
+input[type='number']{-moz-appearance:textfield;}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;}
+
+
+input:-webkit-autofill,select:-webkit-autofill {  
+    -webkit-box-shadow: 0 0 0px 1000px  transparent inset !important;  
+} 
+ 
+ 
+input{
+    outline-color: invert ;
+	outline-style: none ;
+	outline-width: 0px ;
+	border: none ;
+	border-style: none ;
+	text-shadow: none ;
+	-webkit-appearance: none ;
+	-webkit-user-select: text ;
+	outline-color: transparent ;
+	box-shadow: none;
+}
+.van-toast.fail,.van-toast.success {
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding:  9px 12px ;
+	background: #402020;
+	border-radius: 13px;
+	height: auto;
+	min-height: auto;
+	max-width: 90%;
+	top: 14%;
+	&.success{
+		background: #20403D;
+	}
+	.van-toast__icon{
+		font-size: 18px;
+		flex: none;
+		.van-icon__image{
+			width: 18px;
+			height: 18px;
+		}
+	}
+	.van-toast__text{
+		margin-top: 0;
+		margin-left: 8px;
+	}
+}
+.van-toast.van-toast--success,.van-toast.van-toast--fail{
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding:  9px 12px ;
+	background: #20403D;
+	border-radius: 13px;
+	height: auto;
+	min-height: auto;
+	max-width: 90%;
+	top: 14%;
+	.van-toast__icon{
+		width: 18px;
+		height: 18px;
+		flex: none;
+		&::before{display: none;}
+		background: url('../assets/imgs/success.png') no-repeat;
+		background-size: 100% 100%;
+	}
+	.van-toast__text{
+		margin-top: 0;
+		margin-left: 8px;
+	}
+	&.van-toast--fail{
+		background: #402020;
+		.van-toast__icon{
+			background: url('../assets/imgs/fail.png') no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+}
