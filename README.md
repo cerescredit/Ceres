@@ -1,4 +1,4 @@
-# angel-soul
+#CERES
 
 ## Project setup
 ```
