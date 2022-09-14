@@ -18,7 +18,7 @@
         </div>
         
         <template v-else>
-          <el-upload class="upload-demo" drag action="" :multiple="false" :disabled="uploadLoading" accept="image/*" :on-success="uploadSuccess" :on-error="uploadError" :on-progress="onProgress">
+          <el-upload class="upload-demo" drag action="https://upload.ceres.plus/api/file/upload-file" :multiple="false" :disabled="uploadLoading" accept="image/*" :on-success="uploadSuccess" :on-error="uploadError" :on-progress="onProgress">
 
             <van-loading size="20" v-if="uploadLoading" />
             <img v-else-if="imageUrl" :src="imageUrl" alt="">

@@ -1,4 +1,4 @@
-#CERES
+# CERES
 
 ## Project setup
 ```

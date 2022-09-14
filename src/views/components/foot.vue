@@ -20,6 +20,7 @@
       <div class="left">
         <img src="../../assets//imgs/Ylogs.svg" alt="" class="logo" />
         <p>The Infrastructure of web 3.0 decentralized credit system</p>
+        <div>Contact us：business@ceres.credit</div>
       </div>
       <div class="right">
         <div class="h5">
@@ -61,7 +62,7 @@ export default {
         { desc: "Home", tar: "", link: "", router: "/" },
         { desc: "Oracle", tar: "", link: "", router: "Oracle" },
         { desc: "DID", tar: "", link: "", router: "did" },
-        { desc: "SDK", tar: "", link: "", router: "", open: '/sdk' },
+        { desc: "SDK", tar: "", link: "https://github.com/cerescredit/Ceres", },
         // { desc: "Intro", tar: "", link: "" },
         {
           desc: "Whitepaper",
@@ -93,9 +94,6 @@ export default {
       }
       if (item.link) {
         window.open(item.link);
-      }
-      if (item.open) {
-        window.open(window.location.origin + '/#' + item.open);
       }
       if (item.tar) {
         if (this.$route.path != "/") {
@@ -182,6 +180,7 @@ export default {
     .left {
       display: flex;
       flex-direction: column;
+      color: #000000;
       img {
         width: 1.46rem;
         margin-bottom: 0.42rem;
@@ -191,7 +190,11 @@ export default {
         font-weight: 400;
         font-size: 0.24rem;
         line-height: 0.29rem;
-        color: #000000;
+      }
+      div {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 0.18rem;
       }
     }
     .right {
@@ -211,7 +214,7 @@ export default {
         align-items: baseline;
         img {
           width: 0.25rem;
-          margin-left: 0.2rem;
+          margin-right: 0.2rem;
         }
       }
       .h5 {
