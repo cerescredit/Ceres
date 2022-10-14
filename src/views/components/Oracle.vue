@@ -58,7 +58,7 @@ export default {
   methods: {
     refreshData(){
       console.log('refreshData')
-      this.inviteLink = window.location.origin+'/#/Oracle?inviteCode='+this.userInfo.address
+      this.inviteLink = window.location.origin+'/Oracle?inviteCode='+this.userInfo.address
       this.ercMethods.getParentOf(res=>{
         console.log(res)
         if(res.code==200&&res.data!='0x0000000000000000000000000000000000000000'){

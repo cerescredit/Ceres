@@ -248,7 +248,7 @@
 ### zkSync testnet
 | Contract name | Contract address |
 | -------------- | ---------------- |
-| Ceres Relation | 0x62B231b9dd1dAD0c4F4162d591cb4D78f097aEdb |
+| Ceres Relation | 0x999CeE9B9F816690822ED05DFA53f035bf0Db3c9 |
 
 ### HECO mainnet
 | Contract name | Contract address |

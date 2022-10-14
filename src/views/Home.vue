@@ -7,21 +7,21 @@
         <p>Credit Protocol</p>
         <div class="Copywriting">A trusted infrastructure</div>
         <p style="font-size: 0.3rem; line-height: 0.37rem">
-          Based on DID & Oracle
+          Based on SBT & Oracle
         </p>
         <div class="btn">
           <div class="btns" @click="Jump('Oracle',1)">
             Oracle <img src="../assets/imgs/arrow.svg" alt="" />
           </div>
           <div class="btns btny" @click="Jump('did',2)">
-            Mint DID <img src="../assets/imgs/icon-arrow.svg" alt="" />
+            Mint SBT <img src="../assets/imgs/icon-arrow.svg" alt="" />
           </div>
         </div>
         <div class="last">Learn more about Ceres.</div>
       </div>
     </div>
     <div class="parts1" :class="topList[0] - scrollTop < (availHeight * 3) / 5 && 'show'" ref="parts1">
-      <img class="imgtitle Animation" src="../assets/imgs/title.png" alt="" />
+      <!-- <img class="imgtitle Animation" src="../assets/imgs/title.png" alt="" /> -->
       <img class="imgleft Animationleft" src="../assets/imgs/parts2-icon1.png" alt="" />
       <img class="imgright Animationright" src="../assets/imgs/parts2-icon2.png" alt="" />
       <p class="Animation">
@@ -35,12 +35,12 @@
       </div>
       <p class="title Animation">What can Ceres offer?</p>
       <p class="titles Animation">
-        Ceres can offer oracle protocol,DID,Credit System
+        Ceres can offer oracle protocol,SBT,Credit System
       </p>
       <ul class="list">
         <li class="lists Animation" style="transition-delay: 0.1s">
           <img src="../assets/imgs/icon-title1.svg" alt="" />
-          <p class="LItitle">DID</p>
+          <p class="LItitle">SBT</p>
           <div class="LIcontent">
             Web 3.0 identity pass, constitute a decentralized reputation system,
             support to decentralized credit system.
@@ -116,15 +116,15 @@
         <li :class="topList[4] > topList[2]? topList[4]  - scrollTop < (availHeight * 3) / 5 && 'YAnimationS':topList[4] + topList[2] - scrollTop < (availHeight * 3) / 5 && 'YAnimationS'" ref="parts5">
           <img class="right pcright YAnimation" style="transition-delay: 0.1s" src="../assets/imgs/parts3-right2.png" alt="" />
           <div class="left YAnimation" style="transition-delay: 0.3s">
-            <p class="title">Decentralized identity(DID)</p>
+            <p class="title">Decentralized identity(SBT)</p>
             <div class="content contents">
-              User Cast into DID with names,pictures and etc;
+              User Cast into SBT with names,pictures and etc;
             </div>
             <div class="content">
               The pass of decentralized reputation system.
             </div>
             <div class="btns" @click="Jump('did',2)">
-              Mint DID<img src="../assets/imgs/arrow.svg" alt="" />
+              Mint SBT<img src="../assets/imgs/arrow.svg" alt="" />
             </div>
             <p class="Small">*Coming soon</p>
           </div>
@@ -248,7 +248,7 @@
     <div class="parts9 Animation" :class="topList[8] - scrollTop < (availHeight * 3) / 5 && 'Animations'" ref="parts9">
       <p class="titile">How does Ceres work？</p>
       <div class="content">
-        Ceres consists of Oracle and DID,and finally provides credit system.
+        Ceres consists of Oracle and SBT,and finally provides credit system.
       </div>
       <div class="content">
         All based on decentralized web3.0 infrastructure.
@@ -371,7 +371,7 @@
           <li class="DID Yhover" @click="Jump('did',2)">
             <div class="imgs"></div>
             <div class="right">
-              <p>DID</p>
+              <p>SBT</p>
               <div>Learn more</div>
             </div>
           </li>
@@ -639,7 +639,8 @@ export default {
           }
         }
         .btny {
-          background: url("") top left no-repeat, #fff;
+          // background: url("") top left no-repeat, #fff;
+          background: #fff;
           color: #010101;
           margin-left: 0.3rem;
         }
@@ -657,6 +658,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 7rem;
     position: relative;
     overflow: hidden;

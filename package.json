@@ -23,7 +23,6 @@
     "web3": "^1.7.5",
     "marked": "^2.1.3",
     "babel-runtime": "^6.26.0"
-    
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",

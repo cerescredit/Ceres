@@ -5,13 +5,13 @@
       <div class="box">
         <img class="iconlogs" src="../../assets/imgs/icon-logs.svg" alt="" />
         <img class="didbg" src="../../assets/imgs/icon-didbg.png" alt="" />
-        <p class="title">My DID</p>
+        <p class="title">My SBT</p>
         <div class="Yname">
-          <p>DID Name</p>
+          <p>SBT Name</p>
           <p class="active" v-if="isExists">*Username already exists</p>
         </div>
-        <input v-if="didDetails.image" class="Yinput" type="text" disabled :value="didDetails.attributes[0].value" maxlength="30" placeholder="Please enter your DID name." name="" id="" />
-        <input v-else class="Yinput" type="text" v-model="didName" @input="didNameInput" maxlength="30" placeholder="Please enter your DID name." name="" id="" />
+        <input v-if="didDetails.image" class="Yinput" type="text" disabled :value="didDetails.attributes[0].value" maxlength="30" placeholder="Please enter your SBT name." name="" id="" />
+        <input v-else class="Yinput" type="text" v-model="didName" @input="didNameInput" maxlength="30" placeholder="Please enter your SBT name." name="" id="" />
         <p class="title">My portrait</p>
         <div v-if="didDetails.image" class="didImage">
           <img  :src="didDetails.image" alt="">

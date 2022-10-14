@@ -24,10 +24,10 @@
       </div>
       <div class="right">
         <div class="h5">
-          <img src="../../assets/imgs/icon-app1.svg" alt="" />
-          <img src="../../assets/imgs/icon-app2.svg" alt="" />
-          <img src="../../assets/imgs/icon-app3.svg" alt="" />
-          <img src="../../assets/imgs/icon-app4.svg" alt="" />
+          <img @click="open('https://twitter.com/CeresCredit')" src="../../assets/imgs/icon-app1.svg" alt="" />
+          <!-- <img src="../../assets/imgs/icon-app2.svg" alt="" /> -->
+          <img @click="open('https://github.com/cerescredit')" src="../../assets/imgs/icon-app3.svg" alt="" />
+          <!-- <img src="../../assets/imgs/icon-app4.svg" alt="" /> -->
         </div>
         <ul>
           <li @click="_change(item, index)" v-for="(item, index) in menu" :key="index">
@@ -35,10 +35,10 @@
           </li>
         </ul>
         <div class="pc">
-          <img src="../../assets/imgs/icon-app1.svg" alt="" />
-          <img src="../../assets/imgs/icon-app2.svg" alt="" />
-          <img src="../../assets/imgs/icon-app3.svg" alt="" />
-          <img src="../../assets/imgs/icon-app4.svg" alt="" />
+          <img @click="open('https://twitter.com/CeresCredit')" src="../../assets/imgs/icon-app1.svg" alt="" />
+          <!-- <img src="../../assets/imgs/icon-app2.svg" alt="" /> -->
+          <img @click="open('https://github.com/cerescredit')" src="../../assets/imgs/icon-app3.svg" alt="" />
+          <!-- <img src="../../assets/imgs/icon-app4.svg" alt="" /> -->
         </div>
       </div>
     </div>
@@ -61,14 +61,14 @@ export default {
       menu: [
         { desc: "Home", tar: "", link: "", router: "/" },
         { desc: "Oracle", tar: "", link: "", router: "Oracle" },
-        { desc: "DID", tar: "", link: "", router: "did" },
-        { desc: "SDK", tar: "", link: "https://github.com/cerescredit/Ceres", },
+        { desc: "SBT", tar: "", link: "", router: "did" },
+        { desc: "SDK", tar: "", link: "https://github.com/cerescredit/SDK" },
         // { desc: "Intro", tar: "", link: "" },
-        {
-          desc: "Whitepaper",
-          tar: "",
-          link: "https://ceresdid.gitbook.io/nft/",
-        },
+        // {
+        //   desc: "Whitepaper",
+        //   tar: "",
+        //   link: "https://ceresdid.gitbook.io/nft/",
+        // },
       ],
       topLists: [],
     };
@@ -80,7 +80,7 @@ export default {
     window.addEventListener("scroll", this.handleScroll);
     setTimeout(() => {
       this.topLists = localStorage.getItem("topList").split(",");
-    }, 2000)
+    }, 2000);
   },
   methods: {
     open(url) {
@@ -101,7 +101,9 @@ export default {
           this.$router.push("/");
         }
         setTimeout(() => {
-          document.documentElement.scrollTop = localStorage.getItem("topList").split(",")[item.tar];
+          document.documentElement.scrollTop = localStorage
+            .getItem("topList")
+            .split(",")[item.tar];
         }, 50);
       }
     },
@@ -200,6 +202,7 @@ export default {
     .right {
       display: flex;
       ul {
+        margin-right: 0.2rem;
         li {
           font-weight: 400;
           font-size: 0.2rem;
@@ -215,6 +218,7 @@ export default {
         img {
           width: 0.25rem;
           margin-right: 0.2rem;
+          cursor: pointer;
         }
       }
       .h5 {

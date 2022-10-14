@@ -76,8 +76,8 @@ export default {
       menu: [
         { desc: "Home", tar: "", link: "", router: "/" },
         { desc: "Oracle", tar: "", link: "", router: "Oracle" },
-        { desc: "DID", tar: "", link: "", router: "did" },
-        { desc: "SDK", tar: "", link: "https://github.com/cerescredit/Ceres", router: "" },
+        { desc: "SBT", tar: "", link: "", router: "did" },
+        { desc: "SDK", tar: "", link: "https://github.com/cerescredit/SDK", router: "" },
         // { desc: "Intro", tar: "", link: "" },
         // { desc: "Q&A", tar: 11, link: "" },
       ],

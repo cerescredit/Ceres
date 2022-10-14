@@ -57,11 +57,11 @@ const abiJson = {
             CeresDIDMinter:'0x80373EBdc4679b5C63042a54050f02C53d9a71b1',
         },
         '0x118':{//zk测试
-            CeresDID:'0x599d106Ba6B4dd146d8F57C16ea81Dc871793170',
-            CeresToken:'0x777935AB2aF661905925d388cEC8765f70574b1E',
-            CeresRelation:'0x62B231b9dd1dAD0c4F4162d591cb4D78f097aEdb',
-            CeresBinder:'0xf92D51C0432A47a800DA2Ed9ea02EaA1C1945BAa',
-            CeresDIDMinter:'0xe7cF0E01697E6981eDc0f4093fdd349006A79174',
+            CeresDID:'0x82489A6dA4AcB2F7F0914adc3429E626C4eBBc70',
+            CeresToken:'0xD448D477e3065F3182D066b1d788b34c92Ffd0d6',
+            CeresRelation:'0x999CeE9B9F816690822ED05DFA53f035bf0Db3c9',
+            CeresBinder:'0x3B7c6796bF691585C04DbC668C15C36cC962D226',
+            CeresDIDMinter:'0xd3b4C31Eb85FAedA5ac04b346be3C5d110E83487',
         }
         
     },
